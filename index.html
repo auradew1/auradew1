@@ -3,17 +3,80 @@
 <head>
     <title>Beranda</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        /* CSS Tambahan Sesuai Permintaan */
+        
+        /* 1. Font serif italic dan latar belakang lebih elegan */
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            font-style: italic;
+            background-color: #2c2c2c;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 2. Sudut bagian luar tabel melengkung */
+        table {
+            border-collapse: separate;
+            border-spacing: 0;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+            border: 2px solid #ffffff;
+        }
+
+        /* 3. Efek blink-blink (berkedip) untuk judul atau elemen tertentu */
+        @keyframes blinkEffect {
+            0% { opacity: 1; }
+            50% { opacity: 0.3; }
+            100% { opacity: 1; }
+        }
+
+        .blink {
+            animation: blinkEffect 1.5s infinite;
+        }
+
+        /* Memperindah navigasi & tautan */
+        td[bgcolor="skyblue"] a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 4px 8px;
+            border-radius: 6px;
+            transition: background 0.3s;
+        }
+        
+        td[bgcolor="skyblue"] a:hover {
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+
+        h3 {
+            color: #333333;
+            border-bottom: 2px dashed #999;
+            padding-bottom: 4px;
+        }
+
+        a {
+            color: #0044cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body bgcolor="darkgrey" background="images/background.svg">
-    <!-- Halaman web tanpa CSS. Murni hanya memakai HTML -->
+    <!-- Halaman web dengan tambahan style CSS -->
     <p>&nbsp;</p>
     <table border="1" width="800px" cellpadding="12px" align="center" bgcolor="white">
         <tr>
             <td colspan="2" align="center" bgcolor="violet" background="images/jaring-teal.svg">
                 <font color="white">
                     <p>&nbsp;</p>
-                    <h1>Website Aura</h1>
+                    <!-- Efek blink diterapkan di sini -->
+                    <h1 class="blink">Website Aura</h1>
                     <p><em>Small act, Big impact.</em></p>
                     <p>&nbsp;</p>
                 </font>
@@ -48,7 +111,7 @@
                 <!-- Akhir dari content utama -->
             </td>
             <td width="25%" valign="top" bgcolor="white">
-                <p>Tautan eksternal</p>
+                <p><strong>Tautan eksternal</strong></p>
                 <ol>
                     <li><a href="https://auradew1.github.io/auradew1/">Website Aura</a></li>
                     <li><a href="https://www.github.com">Github</a></li>
